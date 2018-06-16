@@ -1,11 +1,26 @@
 body {
-  margin: 0;
+  width: 80%;
+  margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
+  background: beige
+}
+
+#display-winners{
+  background: white;
+  padding: 5px;
+  width: 40%;
 }
 
 #app-title{
   background: tomato;
+}
+
+#random-button {
+  margin: 15px 0px;
+  background: red;
+  color: white;
+  font-size: 30px;
 }
 
 .winner{
