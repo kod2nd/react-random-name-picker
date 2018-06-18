@@ -1,5 +1,5 @@
 body {
-  width: 80%;
+  width: 50%;
   margin: 0 auto;
   padding: 0;
   font-family: sans-serif;
@@ -7,7 +7,7 @@ body {
 }
 
 #display-winners{
-  background: white;
+  background: beige;
   padding: 5px;
   width: 40%;
 }

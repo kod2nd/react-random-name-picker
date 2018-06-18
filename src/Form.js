@@ -2,11 +2,11 @@ import React from 'react';
 
 const Form = (props) => {
     return (
-    <div>
-        <input type="text" value={props.userInputValue} onChange={(event) => props.onChange(event)} placeholder="Please Enter A Name" />
+    <form>
+        <input type="text" value={props.userInputValue} onChange={(event) => props.handleChange(event)} placeholder="Please Enter A Name" />
 
-        <button onClick={() => { props.onClick() }}>Add name</button>
-    </div>
+        <button onClick={(event) => { props.handleUpdateNamesClick(event) }}>Add name</button>
+    </form>
 );
 }
 

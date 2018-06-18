@@ -26,7 +26,9 @@ class App extends Component {
 
         <RandomButton handleClick={() => this.handleClick()} />
 
-        <Form userInputValue={this.state.valueOfInputBox} onChange={(event) => this.handleChange(event)} onClick={() => this.handleUpdateNamesClick()} />
+        <Form userInputValue={this.state.valueOfInputBox} 
+        handleChange={(event) => this.handleChange(event)} 
+        handleUpdateNamesClick={(event) => this.handleUpdateNamesClick(event)} />
       </div>
     );
   };
@@ -43,11 +45,9 @@ class App extends Component {
     })
   }
 
-  handleUpdateNamesClick() {
-    this.setState({
-      names: [...this.state.names, this.state.valueOfInputBox],
-    });
-
+  handleUpdateNamesClick(event) {
+    event.preventDefault()
+    this.setState({names: [...this.state.names, this.state.valueOfInputBox]});
     this.setState({ valueOfInputBox: "" })
   }
 
